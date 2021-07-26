@@ -1,0 +1,106 @@
+*******************************
+                               
+   Approval                    
+                               
+*******************************
+
+
+A) start
+B) end
+C) Input detail rincian biaya SPPD
+D) Memilih menu approval
+E) Memilih salah satu pegawai
+F) Menginputkan catatan
+H) Memilih batalkan
+I) Memilih Revisi
+J) Memilih Setuju
+K) Menyetujui SPPD
+
+Edge : 
+A => C
+C => D
+D => E
+E => F
+F => G
+G => I
+G => H
+G => J
+J => K
+K => B
+H => E
+I => E
+
+
+Path Result: 
+
+****************************************************************
+
+path 1 : 
+A => C
+A => C => D
+A => C => D => E
+A => C => D => E => F
+A => C => D => E => F
+A => C => D => E => F => I
+A => C => D => E => F => I => E
+A => C => D => E => F => I => E => F
+A => C => D => E => F => I => E => F
+A => C => D => E => F => I => E => F => H
+A => C => D => E => F => I => E => F => H => E
+A => C => D => E => F => I => E => F => H => E => F
+A => C => D => E => F => I => E => F => H => E => F
+A => C => D => E => F => I => E => F => H => E => F => J
+A => C => D => E => F => I => E => F => H => E => F => J => K
+A => C => D => E => F => I => E => F => H => E => F => J => K => B
+
+path 2 : 
+
+A => C
+A => C => D
+A => C => D => E
+A => C => D => E => F
+A => C => D => E => F => I
+A => C => D => E => F => I => E
+A => C => D => E => F => I => E => F => J
+A => C => D => E => F => I => E => F => J => K
+A => C => D => E => F => I => E => F => J => K => B
+
+path 3 : 
+
+A => C
+A => C => D
+A => C => D => E
+A => C => D => E => F => H
+A => C => D => E => F => H => E
+A => C => D => E => F => H => E => F
+A => C => D => E => F => H => E => F
+A => C => D => E => F => H => E => F => I
+A => C => D => E => F => H => E => F => I => E
+A => C => D => E => F => H => E => F => I => E => F
+A => C => D => E => F => H => E => F => I => E => F
+A => C => D => E => F => H => E => F => I => E => F => J
+A => C => D => E => F => H => E => F => I => E => F => J => K
+A => C => D => E => F => H => E => F => I => E => F => J => K => B
+
+path 4 : 
+
+A => C
+A => C => D
+A => C => D => E
+A => C => D => E => F
+A => C => D => E => F => H
+A => C => D => E => F => H => E
+A => C => D => E => F => H => E => F => J
+A => C => D => E => F => H => E => F => J => K
+A => C => D => E => F => H => E => F => J => K => B
+
+path 5 : 
+
+A => C
+A => C => D
+A => C => D => E
+A => C => D => E => F => J
+A => C => D => E => F => J => K
+A => C => D => E => F => J => K => B
+
+****************************************************************

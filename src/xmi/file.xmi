@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://schema.omg.org/spec/UML/2.2" xsi:schemaLocation="http://schema.omg.org/spec/UML/2.2 http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_BrK2bOfuEeuDuL-ULdTNFA" name="Activity Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_BrK2befuEeuDuL-ULdTNFA">
+    <importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.2/uml.xml#_0"/>
+  </packageImport>
+
+  <packagedElement xmi:type="uml:Activity" xmi:id="_BrK2bufuEeuDuL-ULdTNFA" name="Approval">
+    <node xmi:type="uml:InitialNode" xmi:id="_BrK2b-fuEeuDuL-ULdTNFA" name="start" outgoing="_BrK2eufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_BrK2cOfuEeuDuL-ULdTNFA" name="end" incoming="_BrK2lefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2cefuEeuDuL-ULdTNFA" name="Input detail rincian biaya SPPD" outgoing="_BrK2fefuEeuDuL-ULdTNFA" incoming="_BrK2eufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2cufuEeuDuL-ULdTNFA" name="Memilih menu approval" outgoing="_BrK2gOfuEeuDuL-ULdTNFA" incoming="_BrK2fefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2c-fuEeuDuL-ULdTNFA" name="Memilih salah satu pegawai" outgoing="_BrK2g-fuEeuDuL-ULdTNFA" incoming="_BrK2gOfuEeuDuL-ULdTNFA _BrK2mOfuEeuDuL-ULdTNFA _BrK2m-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2dOfuEeuDuL-ULdTNFA" name="Menginputkan catatan" outgoing="_BrK2hufuEeuDuL-ULdTNFA" incoming="_BrK2g-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK2defuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK2iefuEeuDuL-ULdTNFA _BrK2jOfuEeuDuL-ULdTNFA _BrK2j-fuEeuDuL-ULdTNFA" incoming="_BrK2hufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2dufuEeuDuL-ULdTNFA" name="Memilih batalkan" outgoing="_BrK2mOfuEeuDuL-ULdTNFA" incoming="_BrK2jOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2d-fuEeuDuL-ULdTNFA" name="Memilih Revisi" outgoing="_BrK2m-fuEeuDuL-ULdTNFA" incoming="_BrK2iefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2eOfuEeuDuL-ULdTNFA" name="Memilih Setuju" outgoing="_BrK2kufuEeuDuL-ULdTNFA" incoming="_BrK2j-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2eefuEeuDuL-ULdTNFA" name="Menyetujui SPPD" outgoing="_BrK2lefuEeuDuL-ULdTNFA" incoming="_BrK2kufuEeuDuL-ULdTNFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2eufuEeuDuL-ULdTNFA" source="_BrK2b-fuEeuDuL-ULdTNFA" target="_BrK2cefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2e-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2fOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2fefuEeuDuL-ULdTNFA" source="_BrK2cefuEeuDuL-ULdTNFA" target="_BrK2cufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2fufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2f-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2gOfuEeuDuL-ULdTNFA" source="_BrK2cufuEeuDuL-ULdTNFA" target="_BrK2c-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2gefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2gufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2g-fuEeuDuL-ULdTNFA" source="_BrK2c-fuEeuDuL-ULdTNFA" target="_BrK2dOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2hOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2hefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2hufuEeuDuL-ULdTNFA" source="_BrK2dOfuEeuDuL-ULdTNFA" target="_BrK2defuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2h-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2iOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2iefuEeuDuL-ULdTNFA" name="revisi" source="_BrK2defuEeuDuL-ULdTNFA" target="_BrK2d-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2iufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2i-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2jOfuEeuDuL-ULdTNFA" name="batalkan" source="_BrK2defuEeuDuL-ULdTNFA" target="_BrK2dufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2jefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2jufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2j-fuEeuDuL-ULdTNFA" name="Setuju" source="_BrK2defuEeuDuL-ULdTNFA" target="_BrK2eOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2kOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2kefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2kufuEeuDuL-ULdTNFA" source="_BrK2eOfuEeuDuL-ULdTNFA" target="_BrK2eefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2k-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2lOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2lefuEeuDuL-ULdTNFA" source="_BrK2eefuEeuDuL-ULdTNFA" target="_BrK2cOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2lufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2l-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2mOfuEeuDuL-ULdTNFA" source="_BrK2dufuEeuDuL-ULdTNFA" target="_BrK2c-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2mefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2mufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2m-fuEeuDuL-ULdTNFA" source="_BrK2d-fuEeuDuL-ULdTNFA" target="_BrK2c-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2nOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2nefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+  </packagedElement>
+
+  <packagedElement xmi:type="uml:Activity" xmi:id="_BrK2nufuEeuDuL-ULdTNFA" name="Pegawai">
+    <node xmi:type="uml:InitialNode" xmi:id="_BrK2n-fuEeuDuL-ULdTNFA" name="start" outgoing="_BrK2vOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2oOfuEeuDuL-ULdTNFA" name="Login Website" outgoing="_BrK2v-fuEeuDuL-ULdTNFA" incoming="_BrK2vOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2oefuEeuDuL-ULdTNFA" name="Pilih menu pengajuan SPPD" outgoing="_BrK2wufuEeuDuL-ULdTNFA" incoming="_BrK2v-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2oufuEeuDuL-ULdTNFA" name="Pilih tambah pengajuan" outgoing="_BrK2xefuEeuDuL-ULdTNFA" incoming="_BrK2wufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2o-fuEeuDuL-ULdTNFA" name="Input detail perjalanan" outgoing="_BrK2yOfuEeuDuL-ULdTNFA" incoming="_BrK2xefuEeuDuL-ULdTNFA _BrK21OfuEeuDuL-ULdTNFA _BrK3GefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2pOfuEeuDuL-ULdTNFA" name="Pilih Selanjutnya" outgoing="_BrK2y-fuEeuDuL-ULdTNFA" incoming="_BrK2yOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2pefuEeuDuL-ULdTNFA" name="Input detail akomodasi" outgoing="_BrK2zufuEeuDuL-ULdTNFA" incoming="_BrK2y-fuEeuDuL-ULdTNFA _BrK2_ufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK2pufuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK20efuEeuDuL-ULdTNFA _BrK21-fuEeuDuL-ULdTNFA" incoming="_BrK2zufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2p-fuEeuDuL-ULdTNFA" name="Pilih sebelumnya" outgoing="_BrK21OfuEeuDuL-ULdTNFA" incoming="_BrK20efuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2qOfuEeuDuL-ULdTNFA" name="Pilih Selanjutnya" outgoing="_BrK22ufuEeuDuL-ULdTNFA" incoming="_BrK21-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2qefuEeuDuL-ULdTNFA" name="Input transportasi" outgoing="_BrK23efuEeuDuL-ULdTNFA" incoming="_BrK22ufuEeuDuL-ULdTNFA _BrK3FufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2qufuEeuDuL-ULdTNFA" name="Memilih tambah anggota" outgoing="_BrK24OfuEeuDuL-ULdTNFA" incoming="_BrK23efuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK2q-fuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK24-fuEeuDuL-ULdTNFA _BrK25ufuEeuDuL-ULdTNFA _BrK26efuEeuDuL-ULdTNFA" incoming="_BrK24OfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2rOfuEeuDuL-ULdTNFA" name="Anggota internal" outgoing="_BrK28ufuEeuDuL-ULdTNFA" incoming="_BrK24-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2refuEeuDuL-ULdTNFA" name="Anggota Eksternal" outgoing="_BrK27-fuEeuDuL-ULdTNFA" incoming="_BrK25ufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2rufuEeuDuL-ULdTNFA" name="Anggota Keluarga" outgoing="_BrK27OfuEeuDuL-ULdTNFA" incoming="_BrK26efuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2r-fuEeuDuL-ULdTNFA" name="Tambah anggota" outgoing="_BrK2-OfuEeuDuL-ULdTNFA" incoming="_BrK29efuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_BrK2sOfuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK29efuEeuDuL-ULdTNFA" incoming="_BrK27OfuEeuDuL-ULdTNFA _BrK27-fuEeuDuL-ULdTNFA _BrK28ufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK2sefuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK2--fuEeuDuL-ULdTNFA _BrK3AefuEeuDuL-ULdTNFA" incoming="_BrK2-OfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2sufuEeuDuL-ULdTNFA" name="Pilih sebelumnya" outgoing="_BrK2_ufuEeuDuL-ULdTNFA" incoming="_BrK2--fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2s-fuEeuDuL-ULdTNFA" name="Pilih selanjutnya" outgoing="_BrK3BOfuEeuDuL-ULdTNFA" incoming="_BrK3AefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2tOfuEeuDuL-ULdTNFA" name="Memeriksa data" outgoing="_BrK3B-fuEeuDuL-ULdTNFA" incoming="_BrK3BOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2tefuEeuDuL-ULdTNFA" name="Memilh petugas perinci" outgoing="_BrK3CufuEeuDuL-ULdTNFA" incoming="_BrK3B-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK2tufuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK3DefuEeuDuL-ULdTNFA _BrK3EOfuEeuDuL-ULdTNFA _BrK3E-fuEeuDuL-ULdTNFA" incoming="_BrK3CufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2t-fuEeuDuL-ULdTNFA" name="Pilih reset" outgoing="_BrK3GefuEeuDuL-ULdTNFA" incoming="_BrK3EOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2uOfuEeuDuL-ULdTNFA" name="Pilih sebelumnya" outgoing="_BrK3FufuEeuDuL-ULdTNFA" incoming="_BrK3DefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2uefuEeuDuL-ULdTNFA" name="Pilih Selanjutnya" outgoing="_BrK3HOfuEeuDuL-ULdTNFA" incoming="_BrK3E-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK2uufuEeuDuL-ULdTNFA" name="SPPD tersimpan" outgoing="_BrK3H-fuEeuDuL-ULdTNFA" incoming="_BrK3HOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_BrK2u-fuEeuDuL-ULdTNFA" name="End" incoming="_BrK3H-fuEeuDuL-ULdTNFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2vOfuEeuDuL-ULdTNFA" source="_BrK2n-fuEeuDuL-ULdTNFA" target="_BrK2oOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2vefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2vufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2v-fuEeuDuL-ULdTNFA" source="_BrK2oOfuEeuDuL-ULdTNFA" target="_BrK2oefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2wOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2wefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2wufuEeuDuL-ULdTNFA" source="_BrK2oefuEeuDuL-ULdTNFA" target="_BrK2oufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2w-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2xOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2xefuEeuDuL-ULdTNFA" source="_BrK2oufuEeuDuL-ULdTNFA" target="_BrK2o-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2xufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2x-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2yOfuEeuDuL-ULdTNFA" source="_BrK2o-fuEeuDuL-ULdTNFA" target="_BrK2pOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2yefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2yufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2y-fuEeuDuL-ULdTNFA" source="_BrK2pOfuEeuDuL-ULdTNFA" target="_BrK2pefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2zOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2zefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2zufuEeuDuL-ULdTNFA" source="_BrK2pefuEeuDuL-ULdTNFA" target="_BrK2pufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2z-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK20OfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK20efuEeuDuL-ULdTNFA" name="Sebelumnya" source="_BrK2pufuEeuDuL-ULdTNFA" target="_BrK2p-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK20ufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK20-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK21OfuEeuDuL-ULdTNFA" source="_BrK2p-fuEeuDuL-ULdTNFA" target="_BrK2o-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK21efuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK21ufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK21-fuEeuDuL-ULdTNFA" name="Selanjutnya" source="_BrK2pufuEeuDuL-ULdTNFA" target="_BrK2qOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK22OfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK22efuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK22ufuEeuDuL-ULdTNFA" source="_BrK2qOfuEeuDuL-ULdTNFA" target="_BrK2qefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK22-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK23OfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK23efuEeuDuL-ULdTNFA" source="_BrK2qefuEeuDuL-ULdTNFA" target="_BrK2qufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK23ufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK23-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK24OfuEeuDuL-ULdTNFA" source="_BrK2qufuEeuDuL-ULdTNFA" target="_BrK2q-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK24efuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK24ufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK24-fuEeuDuL-ULdTNFA" name="Internal" source="_BrK2q-fuEeuDuL-ULdTNFA" target="_BrK2rOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK25OfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK25efuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK25ufuEeuDuL-ULdTNFA" name="Eksternal" source="_BrK2q-fuEeuDuL-ULdTNFA" target="_BrK2refuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK25-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK26OfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK26efuEeuDuL-ULdTNFA" name="Keluarga" source="_BrK2q-fuEeuDuL-ULdTNFA" target="_BrK2rufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK26ufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK26-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK27OfuEeuDuL-ULdTNFA" source="_BrK2rufuEeuDuL-ULdTNFA" target="_BrK2sOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK27efuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK27ufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK27-fuEeuDuL-ULdTNFA" source="_BrK2refuEeuDuL-ULdTNFA" target="_BrK2sOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK28OfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK28efuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK28ufuEeuDuL-ULdTNFA" source="_BrK2rOfuEeuDuL-ULdTNFA" target="_BrK2sOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK28-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK29OfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK29efuEeuDuL-ULdTNFA" source="_BrK2sOfuEeuDuL-ULdTNFA" target="_BrK2r-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK29ufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK29-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2-OfuEeuDuL-ULdTNFA" source="_BrK2r-fuEeuDuL-ULdTNFA" target="_BrK2sefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2-efuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2-ufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2--fuEeuDuL-ULdTNFA" name="Sebelumnya" source="_BrK2sefuEeuDuL-ULdTNFA" target="_BrK2sufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2_OfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK2_efuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK2_ufuEeuDuL-ULdTNFA" source="_BrK2sufuEeuDuL-ULdTNFA" target="_BrK2pefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK2_-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3AOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3AefuEeuDuL-ULdTNFA" name="Selanjutnya" source="_BrK2sefuEeuDuL-ULdTNFA" target="_BrK2s-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3AufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3A-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3BOfuEeuDuL-ULdTNFA" source="_BrK2s-fuEeuDuL-ULdTNFA" target="_BrK2tOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3BefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3BufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3B-fuEeuDuL-ULdTNFA" source="_BrK2tOfuEeuDuL-ULdTNFA" target="_BrK2tefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3COfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3CefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3CufuEeuDuL-ULdTNFA" source="_BrK2tefuEeuDuL-ULdTNFA" target="_BrK2tufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3C-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3DOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3DefuEeuDuL-ULdTNFA" name="Sebelumnya" source="_BrK2tufuEeuDuL-ULdTNFA" target="_BrK2uOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3DufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3D-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3EOfuEeuDuL-ULdTNFA" name="Reset" source="_BrK2tufuEeuDuL-ULdTNFA" target="_BrK2t-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3EefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3EufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3E-fuEeuDuL-ULdTNFA" name="Selanjutnya" source="_BrK2tufuEeuDuL-ULdTNFA" target="_BrK2uefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3FOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3FefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3FufuEeuDuL-ULdTNFA" source="_BrK2uOfuEeuDuL-ULdTNFA" target="_BrK2qefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3F-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3GOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3GefuEeuDuL-ULdTNFA" source="_BrK2t-fuEeuDuL-ULdTNFA" target="_BrK2o-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3GufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3G-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3HOfuEeuDuL-ULdTNFA" source="_BrK2uefuEeuDuL-ULdTNFA" target="_BrK2uufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3HefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3HufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3H-fuEeuDuL-ULdTNFA" source="_BrK2uufuEeuDuL-ULdTNFA" target="_BrK2u-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3IOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3IefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+  </packagedElement>
+
+  <packagedElement xmi:type="uml:Activity" xmi:id="_BrK3IufuEeuDuL-ULdTNFA" name="Petugas Perinci">
+    <node xmi:type="uml:InitialNode" xmi:id="_BrK3I-fuEeuDuL-ULdTNFA" name="Start" outgoing="_BrK3OefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3JOfuEeuDuL-ULdTNFA" name="Pegawai selesai menginput SPPD" outgoing="_BrK3POfuEeuDuL-ULdTNFA" incoming="_BrK3OefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3JefuEeuDuL-ULdTNFA" name="Memilih menu perincian" outgoing="_BrK3P-fuEeuDuL-ULdTNFA" incoming="_BrK3POfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3JufuEeuDuL-ULdTNFA" name="Memilih salah satu pemohon SPPD" outgoing="_BrK3QufuEeuDuL-ULdTNFA" incoming="_BrK3P-fuEeuDuL-ULdTNFA _BrK3UefuEeuDuL-ULdTNFA _BrLcs-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3J-fuEeuDuL-ULdTNFA" name="Menentukan sumber dana" outgoing="_BrK3RefuEeuDuL-ULdTNFA" incoming="_BrK3QufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3KOfuEeuDuL-ULdTNFA" name="Menginputkan detail rincian SPPD" outgoing="_BrK3SOfuEeuDuL-ULdTNFA" incoming="_BrK3RefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK3KefuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK3S-fuEeuDuL-ULdTNFA _BrK3TufuEeuDuL-ULdTNFA" incoming="_BrK3SOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3KufuEeuDuL-ULdTNFA" name="Membatalkan data" outgoing="_BrK3UefuEeuDuL-ULdTNFA" incoming="_BrK3S-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3K-fuEeuDuL-ULdTNFA" name="Menyetujui rincian SPPD" outgoing="_BrK3YOfuEeuDuL-ULdTNFA" incoming="_BrK3TufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3LOfuEeuDuL-ULdTNFA" name="Memilih salah satu pemohon untuk revisi" outgoing="_BrK3VOfuEeuDuL-ULdTNFA" incoming="_BrLcsOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3LefuEeuDuL-ULdTNFA" name="Melakukan revisi" outgoing="_BrK3WufuEeuDuL-ULdTNFA" incoming="_BrK3VOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK3LufuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrK3V-fuEeuDuL-ULdTNFA _BrK3XefuEeuDuL-ULdTNFA" incoming="_BrK3WufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3L-fuEeuDuL-ULdTNFA" name="Membatalkan data revisi" outgoing="_BrLcs-fuEeuDuL-ULdTNFA" incoming="_BrK3V-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3MOfuEeuDuL-ULdTNFA" name="Menyetujui revisi" outgoing="_BrLcyOfuEeuDuL-ULdTNFA" incoming="_BrK3XefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_BrK3MefuEeuDuL-ULdTNFA" name="Pilih" outgoing="_BrLcsOfuEeuDuL-ULdTNFA _BrLctufuEeuDuL-ULdTNFA _BrLcv-fuEeuDuL-ULdTNFA" incoming="_BrK3YOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3MufuEeuDuL-ULdTNFA" name="Memilih menu pembatalan" outgoing="_BrLcuefuEeuDuL-ULdTNFA" incoming="_BrLctufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3M-fuEeuDuL-ULdTNFA" name="Memilih salah satu pemohon untuk dibatalkan" outgoing="_BrLcvOfuEeuDuL-ULdTNFA" incoming="_BrLcuefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3NOfuEeuDuL-ULdTNFA" name="Membatalkan pengajuan" outgoing="_BrLcy-fuEeuDuL-ULdTNFA" incoming="_BrLcvOfuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3NefuEeuDuL-ULdTNFA" name="Memilih menu perincian" outgoing="_BrLcwufuEeuDuL-ULdTNFA" incoming="_BrLcv-fuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3NufuEeuDuL-ULdTNFA" name="Memilih salah satu pemohon untuk diprint" outgoing="_BrLcxefuEeuDuL-ULdTNFA" incoming="_BrLcwufuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_BrK3N-fuEeuDuL-ULdTNFA" name="Cetak Form" outgoing="_BrLczufuEeuDuL-ULdTNFA" incoming="_BrLcxefuEeuDuL-ULdTNFA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_BrK3OOfuEeuDuL-ULdTNFA" name="End" incoming="_BrLcyOfuEeuDuL-ULdTNFA _BrLcy-fuEeuDuL-ULdTNFA _BrLczufuEeuDuL-ULdTNFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3OefuEeuDuL-ULdTNFA" source="_BrK3I-fuEeuDuL-ULdTNFA" target="_BrK3JOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3OufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3O-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3POfuEeuDuL-ULdTNFA" source="_BrK3JOfuEeuDuL-ULdTNFA" target="_BrK3JefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3PefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3PufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3P-fuEeuDuL-ULdTNFA" source="_BrK3JefuEeuDuL-ULdTNFA" target="_BrK3JufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3QOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3QefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3QufuEeuDuL-ULdTNFA" source="_BrK3JufuEeuDuL-ULdTNFA" target="_BrK3J-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3Q-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3ROfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3RefuEeuDuL-ULdTNFA" source="_BrK3J-fuEeuDuL-ULdTNFA" target="_BrK3KOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3RufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3R-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3SOfuEeuDuL-ULdTNFA" source="_BrK3KOfuEeuDuL-ULdTNFA" target="_BrK3KefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3SefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3SufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3S-fuEeuDuL-ULdTNFA" name="Batalkan" source="_BrK3KefuEeuDuL-ULdTNFA" target="_BrK3KufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3TOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3TefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3TufuEeuDuL-ULdTNFA" name="Setuju" source="_BrK3KefuEeuDuL-ULdTNFA" target="_BrK3K-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3T-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3UOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3UefuEeuDuL-ULdTNFA" source="_BrK3KufuEeuDuL-ULdTNFA" target="_BrK3JufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3UufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3U-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3VOfuEeuDuL-ULdTNFA" source="_BrK3LOfuEeuDuL-ULdTNFA" target="_BrK3LefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3VefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3VufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3V-fuEeuDuL-ULdTNFA" name="Batalkan" source="_BrK3LufuEeuDuL-ULdTNFA" target="_BrK3L-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3WOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3WefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3WufuEeuDuL-ULdTNFA" source="_BrK3LefuEeuDuL-ULdTNFA" target="_BrK3LufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3W-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3XOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3XefuEeuDuL-ULdTNFA" source="_BrK3LufuEeuDuL-ULdTNFA" target="_BrK3MOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3XufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3X-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrK3YOfuEeuDuL-ULdTNFA" source="_BrK3K-fuEeuDuL-ULdTNFA" target="_BrK3MefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrK3YefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrK3YufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcsOfuEeuDuL-ULdTNFA" name="Revisi" source="_BrK3MefuEeuDuL-ULdTNFA" target="_BrK3LOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcsefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcsufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcs-fuEeuDuL-ULdTNFA" source="_BrK3L-fuEeuDuL-ULdTNFA" target="_BrK3JufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLctOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLctefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLctufuEeuDuL-ULdTNFA" name="Pembatalan" source="_BrK3MefuEeuDuL-ULdTNFA" target="_BrK3MufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLct-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcuOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcuefuEeuDuL-ULdTNFA" source="_BrK3MufuEeuDuL-ULdTNFA" target="_BrK3M-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcuufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcu-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcvOfuEeuDuL-ULdTNFA" source="_BrK3M-fuEeuDuL-ULdTNFA" target="_BrK3NOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcvefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcvufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcv-fuEeuDuL-ULdTNFA" name="Cetak Form" source="_BrK3MefuEeuDuL-ULdTNFA" target="_BrK3NefuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcwOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcwefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcwufuEeuDuL-ULdTNFA" source="_BrK3NefuEeuDuL-ULdTNFA" target="_BrK3NufuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcw-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcxOfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcxefuEeuDuL-ULdTNFA" source="_BrK3NufuEeuDuL-ULdTNFA" target="_BrK3N-fuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcxufuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcx-fuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcyOfuEeuDuL-ULdTNFA" source="_BrK3MOfuEeuDuL-ULdTNFA" target="_BrK3OOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcyefuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLcyufuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLcy-fuEeuDuL-ULdTNFA" source="_BrK3NOfuEeuDuL-ULdTNFA" target="_BrK3OOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLczOfuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLczefuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BrLczufuEeuDuL-ULdTNFA" source="_BrK3N-fuEeuDuL-ULdTNFA" target="_BrK3OOfuEeuDuL-ULdTNFA">
+      <guard xmi:type="uml:OpaqueExpression" xmi:id="_BrLcz-fuEeuDuL-ULdTNFA">
+        <language></language>
+        <body></body>
+      </guard>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BrLc0OfuEeuDuL-ULdTNFA" value="1"/>
+    </edge>
+  </packagedElement>
+  
+<profileApplication xmi:type="uml:ProfileApplication" xmi:id="_BrLc0efuEeuDuL-ULdTNFA">
+    <xmi:Extension extender="http://www.eclipse.org/emf/2002/Ecore">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BrLc0ufuEeuDuL-ULdTNFA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://schema.omg.org/spec/UML/2.2/StandardProfileL2.xmi#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+    </xmi:Extension>
+    <appliedProfile xmi:type="uml:Profile" href="http://schema.omg.org/spec/UML/2.2/StandardProfileL2.xmi#_0"/>
+  </profileApplication>
+
+</uml:Package>

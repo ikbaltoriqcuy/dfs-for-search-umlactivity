@@ -1,0 +1,286 @@
+*******************************
+                               
+   Petugas Perinci                    
+                               
+*******************************
+
+
+A) Start
+B) Pegawai selesai menginput SPPD
+C) Memilih menu perincian
+D) Memilih salah satu pemohon SPPD
+E) Menentukan sumber dana
+F) Menginputkan detail rincian SPPD
+H) Membatalkan data
+I) Menyetujui rincian SPPD
+J) Memilih salah satu pemohon untuk revisi
+K) Melakukan revisi
+M) Membatalkan data revisi
+N) Menyetujui revisi
+P) Memilih menu pembatalan
+Q) Memilih salah satu pemohon untuk dibatalkan
+R) Membatalkan pengajuan
+S) Memilih menu perincian
+T) Memilih salah satu pemohon untuk diprint
+U) Cetak Form
+V) End
+
+Edge : 
+A => B
+B => C
+C => D
+D => E
+E => F
+F => G
+G => H
+G => I
+H => D
+J => K
+L => M
+K => L
+L => N
+I => O
+O => J
+M => D
+O => P
+P => Q
+Q => R
+O => S
+S => T
+T => U
+N => V
+R => V
+U => V
+
+
+Path Result: 
+
+****************************************************************
+
+path 1 : 
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F
+A => B => C => D => E => F => H
+A => B => C => D => E => F => H => D
+A => B => C => D => E => F => H => D => E
+A => B => C => D => E => F => H => D => E => F
+A => B => C => D => E => F => H => D => E => F
+A => B => C => D => E => F => H => D => E => F => I
+A => B => C => D => E => F => H => D => E => F => I
+A => B => C => D => E => F => H => D => E => F => I => J
+A => B => C => D => E => F => H => D => E => F => I => J => K
+A => B => C => D => E => F => H => D => E => F => I => J => K
+A => B => C => D => E => F => H => D => E => F => I => J => K => M
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => P
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => P => Q
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => P => Q => R
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => P => Q => R => V
+
+path 2 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => H
+A => B => C => D => E => F => H => D
+A => B => C => D => E => F => H => D => E
+A => B => C => D => E => F => H => D => E => F
+A => B => C => D => E => F => H => D => E => F => I
+A => B => C => D => E => F => H => D => E => F => I => J
+A => B => C => D => E => F => H => D => E => F => I => J => K
+A => B => C => D => E => F => H => D => E => F => I => J => K => M
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => S
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => S => T
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => S => T => U
+A => B => C => D => E => F => H => D => E => F => I => J => K => M => D => E => F => I => S => T => U => V
+
+path 3 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => H
+A => B => C => D => E => F => H => D
+A => B => C => D => E => F => H => D => E
+A => B => C => D => E => F => H => D => E => F
+A => B => C => D => E => F => H => D => E => F => I
+A => B => C => D => E => F => H => D => E => F => I => J
+A => B => C => D => E => F => H => D => E => F => I => J => K => N
+A => B => C => D => E => F => H => D => E => F => I => J => K => N => V
+
+path 4 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => H
+A => B => C => D => E => F => H => D
+A => B => C => D => E => F => H => D => E
+A => B => C => D => E => F => H => D => E => F
+A => B => C => D => E => F => H => D => E => F => I => P
+A => B => C => D => E => F => H => D => E => F => I => P => Q
+A => B => C => D => E => F => H => D => E => F => I => P => Q => R
+A => B => C => D => E => F => H => D => E => F => I => P => Q => R => V
+
+path 5 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => H
+A => B => C => D => E => F => H => D
+A => B => C => D => E => F => H => D => E
+A => B => C => D => E => F => H => D => E => F
+A => B => C => D => E => F => H => D => E => F => I => S
+A => B => C => D => E => F => H => D => E => F => I => S => T
+A => B => C => D => E => F => H => D => E => F => I => S => T => U
+A => B => C => D => E => F => H => D => E => F => I => S => T => U => V
+
+path 6 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F => I
+A => B => C => D => E => F => I
+A => B => C => D => E => F => I => J
+A => B => C => D => E => F => I => J => K
+A => B => C => D => E => F => I => J => K
+A => B => C => D => E => F => I => J => K => M
+A => B => C => D => E => F => I => J => K => M => D
+A => B => C => D => E => F => I => J => K => M => D => E
+A => B => C => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F => H
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => P
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => P => Q
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => P => Q => R
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => P => Q => R => V
+
+path 7 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => I
+A => B => C => D => E => F => I => J
+A => B => C => D => E => F => I => J => K
+A => B => C => D => E => F => I => J => K => M
+A => B => C => D => E => F => I => J => K => M => D
+A => B => C => D => E => F => I => J => K => M => D => E
+A => B => C => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F => H
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => S
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => S => T
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => S => T => U
+A => B => C => D => E => F => I => J => K => M => D => E => F => H => D => E => F => I => S => T => U => V
+
+path 8 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => I
+A => B => C => D => E => F => I => J
+A => B => C => D => E => F => I => J => K
+A => B => C => D => E => F => I => J => K => M
+A => B => C => D => E => F => I => J => K => M => D
+A => B => C => D => E => F => I => J => K => M => D => E
+A => B => C => D => E => F => I => J => K => M => D => E => F => I
+A => B => C => D => E => F => I => J => K => M => D => E => F => I
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => P
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => P => Q
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => P => Q => R
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => P => Q => R => V
+
+path 9 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => I
+A => B => C => D => E => F => I => J
+A => B => C => D => E => F => I => J => K
+A => B => C => D => E => F => I => J => K => M
+A => B => C => D => E => F => I => J => K => M => D
+A => B => C => D => E => F => I => J => K => M => D => E
+A => B => C => D => E => F => I => J => K => M => D => E => F
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => S
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => S => T
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => S => T => U
+A => B => C => D => E => F => I => J => K => M => D => E => F => I => S => T => U => V
+
+path 10 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => I
+A => B => C => D => E => F => I => J
+A => B => C => D => E => F => I => J => K => N
+A => B => C => D => E => F => I => J => K => N => V
+
+path 11 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => I => P
+A => B => C => D => E => F => I => P => Q
+A => B => C => D => E => F => I => P => Q => R
+A => B => C => D => E => F => I => P => Q => R => V
+
+path 12 : 
+
+A => B
+A => B => C
+A => B => C => D
+A => B => C => D => E
+A => B => C => D => E => F
+A => B => C => D => E => F => I => S
+A => B => C => D => E => F => I => S => T
+A => B => C => D => E => F => I => S => T => U
+A => B => C => D => E => F => I => S => T => U => V
+
+****************************************************************
